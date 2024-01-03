@@ -28,8 +28,8 @@ env:
   IMAGE: static-site
 
 jobs:
-  setup-build-publish-deploy:
-    name: Setup, Build, Publish, and Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest      
 
     permissions:
