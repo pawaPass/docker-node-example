@@ -30,9 +30,7 @@ env:
 jobs:
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
-    runs-on: ubuntu-latest
-    environment: production
-      
+    runs-on: ubuntu-latest      
 
     permissions:
       contents: 'read'
@@ -78,7 +76,6 @@ jobs:
   publish:
     name: publish
     runs-on: ubuntu-latest
-    environment: production
     if: github.event_name == 'push'
 
     permissions:
